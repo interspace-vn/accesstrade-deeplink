@@ -104,6 +104,9 @@ class nhymxu_at_deeplink {
 			function callback()
 			{
 				var selected_text = getSel();
+				if( selected_text == '' ) {
+					selected_text = 'dien_ten_san_pham';
+				}
 				QTags.insertContent('[at url="dien_link_san_pham"]' +  selected_text + '[/at]');
 			}
 			</script>

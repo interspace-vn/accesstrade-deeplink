@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: Nhymxu AccessTrade Deeplink shortcode
-Plugin URI: http://dungnt.net/nhymxu-at-deeplink-wp
-Description: Shortcode chuyển link sản phẩm thành deeplink
+Plugin Name: AccessTrade Deeplink
+Plugin URI: http://github.com/nhymxu/accesstrade-deeplink
+Description: Chuyển link sản phẩm thành deeplink cho hệ thống của AccessTrade
 Author: Dũng Nguyễn (nhymxu)
 Version: 0.2.0
 Author URI: http://dungnt.net
@@ -17,7 +17,7 @@ class nhymxu_at_deeplink {
 	}
 
 	function admin_page() {
-		add_options_page('Nhymxu AT Deeplink', 'Nhymxu AT Deeplink', 'manage_options', 'nhymxu_at_deeplink', [$this,'admin_page_callback']);
+		add_options_page('AccessTrade Deeplink', 'AccessTrade Deeplink', 'manage_options', 'nhymxu_at_deeplink', [$this,'admin_page_callback']);
 	}
 	function generate( $url ) {
 		$option = get_option('nhymxu_at_deeplink', ['uid' => '', 'utmsource' => '']);

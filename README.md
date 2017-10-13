@@ -1,4 +1,4 @@
-# nhymxu-at-deeplink
+# accesstrade-deeplink
 Shortcode generate AccessTrade deeplink
 
 # Cài đặt
@@ -6,10 +6,10 @@ Shortcode generate AccessTrade deeplink
 ### Cách 1
 Tải thư mục nhymxu-at-deeplink lên wp-content/plugins
 Vào admin và active plugin
-Vào Settings -> Nhymxu AT Deeplink để cài đặt AccessTrade User ID
+Vào Settings -> AccessTrade Deeplink để cài đặt AccessTrade User ID
 
 ### Cách 2
-Tải bản đóng gói plugin ở ![đây](https://github.com/nhymxu/nhymxu-at-deeplink/releases)
+Tải bản đóng gói plugin ở ![đây](https://github.com/nhymxu/accesstrade-deeplink/releases)
 Cài đặt plugin với file zip ở WordPress admin
 
 # Cách dùng

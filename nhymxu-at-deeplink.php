@@ -12,6 +12,7 @@ class nhymxu_at_deeplink {
 	public function __construct() {
 		add_shortcode( 'at', [$this,'shortcode_callback'] );
 		add_action('admin_menu', [$this,'admin_page']);
+		add_action("admin_print_footer_scripts", [$this, 'shortcode_button_script']);		
 	}
 
 	function admin_page() {
@@ -78,6 +79,35 @@ class nhymxu_at_deeplink {
 		</form>
 	</div>
 	<?php
+	}
+
+	function shortcode_button_script() {
+		if(wp_script_is("quicktags")):
+			?>
+			<script type="text/javascript">
+			//this function is used to retrieve the selected text from the text editor
+			function getSel()
+			{
+				var txtarea = document.getElementById("content");
+				var start = txtarea.selectionStart;
+				var finish = txtarea.selectionEnd;
+				return txtarea.value.substring(start, finish);
+			}
+
+			QTags.addButton( 
+				"at_shortcode", 
+				"AT Deeplink", 
+				callback
+			);
+
+			function callback()
+			{
+				var selected_text = getSel();
+				QTags.insertContent('[at url="dien_link_san_pham"]' +  selected_text + '[/at]');
+			}
+			</script>
+			<?php
+		endif;
 	}
 }
 

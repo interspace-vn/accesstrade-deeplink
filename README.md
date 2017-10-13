@@ -14,3 +14,9 @@ Trong bài viết, điền theo format
 Hoặc nếu muốn đặt tiêu đề đặc biệt
 ```
 [at url="http://linksanpham.com/abcdef"]Tên link hiển thị[/at]
+```
+
+# Ảnh demo thực tế
+
+![Visual Editor](demo_visual_editor.jpg)
+![Text Editor](demo_text_editor.jpg)

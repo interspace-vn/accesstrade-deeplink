@@ -4,7 +4,7 @@ Plugin Name: AccessTrade Deeplink
 Plugin URI: http://github.com/nhymxu/accesstrade-deeplink
 Description: Chuyển link sản phẩm thành deeplink cho hệ thống của AccessTrade
 Author: Dũng Nguyễn (nhymxu)
-Version: 0.2.0
+Version: 0.2.1
 Author URI: http://dungnt.net
 */
 

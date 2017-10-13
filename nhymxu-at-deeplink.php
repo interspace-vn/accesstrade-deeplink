@@ -4,7 +4,7 @@ Plugin Name: Nhymxu AccessTrade Deeplink shortcode
 Plugin URI: http://dungnt.net/nhymxu-at-deeplink-wp
 Description: Shortcode chuyển link sản phẩm thành deeplink
 Author: Dũng Nguyễn (nhymxu)
-Version: 0.1
+Version: 0.2.0
 Author URI: http://dungnt.net
 */
 
